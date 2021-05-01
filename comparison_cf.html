@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    
+    <link rel="stylesheet" href="codeforces_visiual.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="search_box.css">
+    <link rel="stylesheet" href="codeforces_visiual_chart.css">
+    <link rel="stylesheet" href="comparison.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="progess_circle.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+     <!-- Vertical-Navbar for phone and tab only --> 
+    
+ 
+  
+    
+      <!-- vs card -->
+ <div class="navtitle">
+  <div class="title"><div class="dot_oponent1" ></div><p class="oponent1" id="user1">Drishtdyumn</p>
+    <h3 class="vs">vs</h3>
+   <div class="dot_oponent2" width="1.875rem" height="1.875rem"></div> <p class="oponent2" id="user2">Anshul_sharma3214</p>
+  </div>
+ <div class="wrap">
+   
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="User Handels give space between handels" id="search-inputs"/>
+    <button type="submit" class="searchButton" onclick="compareSearch()">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+ <div class="button_grp">
+     <div class="home_div">
+      <a href="index.html"> <img src="home.png" class ="home_logo" width="30rem" height="30rem"  alt="rate"></a>
+     </div>
+     <div class="compare_div">
+      <a href="comparison_cf.html"> <img src="compare.png" class ="compare_logo" width="30rem" height="30rem"  alt="rate"></a>
+     </div>
+ </div>
+</div>
+
+
+     <!-- Compare_card -->
+    <div class="compare_outer">
+        <div class="compare_inner_one">
+            <span class="profile_image1"> <img src="programing.png"  width="60rem" height="60rem"  alt="rate"></span>
+            <h4 class="name">Drishtdyumn</h4>
+            <h4 class="name1">Anshul</h4>
+            <div class="profile_image2"> <img src="programing.png"  width="60rem" height="60rem"  alt="rate"></div>
+        </div>
+        <div class="compare_inner_two">
+        <div class="bar_left_container">
+          <div class="bar_left1">
+            <div class="progress_bar_left"></div>
+          </div>
+          <div class="bar_left2">
+            <div class="progress_bar_left"></div>
+          </div>
+          <div class="bar_left3">
+            <div class="progress_bar_left"></div>
+          </div>
+          <div class="bar_left4">
+            <div class="progress_bar_left"></div>
+          </div>
+          <div class="bar_left5">
+            <div class="progress_bar_left"></div>
+          </div>
+        </div>
+        <div class="compare_info">
+         <div class="info1">
+           <h4>Current Rank</h4>
+         </div>
+         <div class="info2">
+          <h4>Current Rating</h4>
+        </div>
+        <div class="info3">
+          <h4>Best/Worst Rank</h4>
+        </div>
+        <div class="info4">
+          <h4>Contest Played</h4>
+        </div>
+        <div class="info5">
+          <h4>Best Rating and Rank</h4>
+        </div>
+
+        </div>
+        <div class="bar_right_container">
+          <div class="bar_right1">
+            <div class="progress_bar_right"></div>
+          </div>
+          <div class="bar_right2">
+            <div class="progress_bar_right"></div>
+          </div>
+          <div class="bar_right3">
+            <div class="progress_bar_right"></div>
+          </div>
+          <div class="bar_right4">
+            <div class="progress_bar_right"></div>
+          </div>
+          <div class="bar_right5">
+            <div class="progress_bar_right"></div>
+          </div>
+        </div>
+        </div>
+        </div>
+    
+
+
+
+        <div class="charts_comparison" style="width: 100%; height: auto">
+         <div class="time_line"><div class="time_line_div"><div id="chart_div" style="width: 100%; height: 100%; align-items: center;"></div></div></div>
+        <div class="rating_comp" id="rate_it"> <div class="questionsRatingComaparison_div"><div id="questionsRatingComaparison" style="width: 100%; height: 100%; align-items: center;"></div></div></div>
+        <div class="question_comp"><div class="questionsComaparison_div"><div id="questionsComaparison" style="width: 100%; height: 100%;"></div></div></div>
+        <div class="question_comp"><div class="Comaparison_div" id="tag_it"><div id="Comaparison" style="width: 100%; height: 100%;"></div></div></div>
+          <div class="wrap1">
+         <div class="tried_solved_div" id="tried"> <div id="tried_solved" style="width: 100%; height: 100%;"></div></div>
+         <div class="unsolved_div"> <div id="unsolved" style="width: 100%; height: 100%;"></div></div>
+          </div>
+           <div class="wrap2">
+           <div class="average_sub_div"> <div id="average_sub" style="width: 100%; height: 100%;"></div></div>
+            <div class="max_sub_div"><div id="max_sub" style="width: 100%; height: 100%;"></div></div>
+          </div>
+          <div class="wrap3">
+          <div class="one_accept_div"><div id="one_accept" style="width: 100%; height: 100%;"></div></div>
+           <div class="max_acc_div"><div id="max_acc" style="width: 100%; height: 100%;"></div></div>
+          </div>
+        </div>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script src="compare.js"></script>
+      <script>
+      </script>
+  
+     
+   <footer class="bg-light text-center text-lg-start">
+		<div class="text-center p-3" style="background-color: #002147;">
+		  <a class="copy" href="index.html">© 2021 Copyright: Drishtdyumn and Anshul</a>
+		  <ul>
+			<li><a class="querie"href="contact_us.html"> <img src="send.png" width="70px" height="60px"  alt="rate"> </a></li>
+			<li> <a class="copy" href="contact_us.html">Contact Us</a></li>
+		</ul>
+		</div>
+		
+	  </footer> 
+
+
+
+       
+</body>
+</html>

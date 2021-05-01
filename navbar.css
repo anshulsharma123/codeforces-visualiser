@@ -1,0 +1,33 @@
+.nav
+{
+    position: fix;
+    width: 70px;
+    background-color: #FFA200;
+    position: absolute;
+    top: 0.7%;
+    height: 37.5rem;
+    left: 0.3%;
+    border-radius: 15px 25px 25px 15px;
+    padding-top: 6%;
+    padding-left: 0.3%;
+}
+.logo
+{
+    position: relative;
+    top: -8%;
+    left: 1%;
+}
+#Capa_1
+{
+    position: relative;
+    /* background-color: antiquewhite !important; */
+    border-radius: 10px;
+    height: 4.375rem;
+    top: -35%;
+}
+.compare
+{
+    color: aliceblue;
+    position: relative;
+    left: -50%;
+}

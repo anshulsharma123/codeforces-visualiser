@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 16px;
+}
+body
+{
+    width: 100%;
+}
+.message_me
+{
+    cursor: pointer;
+    background-color: black;
+    width: 80px;
+    height: 65px;
+    position: absolute;
+    right :1px;
+    top :4330px;
+    border-radius: 10px;
+    margin-right: 0.4%;
+}
+.navtitle
+{
+    background-color: rgb(29, 29, 46);
+}
+.content
+{
+    background-color: rgb(29, 29, 46);
+    margin-top: 0%;
+    width: 100%;
+    height: auto;
+}
+.navtitle
+{
+    margin-left: 0%;
+    padding-bottom: 3%;
+    display: flex;
+}
+.welcome
+{
+    padding-top: 8%;
+    font-family: cursive;
+    color: snow;
+    font-size: 1.25rem
+}
+.title h3
+{
+    color: snow;
+    font-size: 2rem;
+}
+
+.title
+{
+    background-color: #2B6D91;
+    font-family: cursive;
+    width: 28.125rem;
+    border-radius: 0.938rem ;
+    height: 15rem;
+    margin-right: 0%;
+    margin-left: 2%;
+    margin-top: 3%;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.person_name
+{
+    /* font-size: 3rem; */
+    padding-top: 5%;
+    position: relative;
+    top: 1.563rem;
+    color: aliceblue;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box1 {
+    margin-top: 70%;
+    margin-left: 1%;
+    margin-right: -2%;
+    border-radius: 2px 25px 25px 2px;
+    transition-property: background, border-radius;
+    transition-timing-function: ease-in-out;
+    height: 4.375em;;
+    width: 7.5;
+    
+  }
+  .box1:hover {
+    background: #E8F4F0;
+    border-radius: 10px 25px 25px 10px;
+  }
+.card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+}
+.card1
+{
+    background: #fff;;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.card-img-top
+{
+    width: 3.438rem; 
+    border-radius: 18px;
+    padding: 3%;
+    margin-top: 15%;
+    margin-left: 33%;
+}
+.compare_button
+{
+    position: relative;
+    top: -45%;
+    color: whitesmoke;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+#card1,#card2,#card3,#card4,#card5
+{
+    margin-left: 5%;
+}
+#ratingInformation,#rankInformation,#maxInformation,#contestInformation,#minRankInformation, #maxRankInformation
+{
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 11%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.563rem;
+}
+#information_desc,#max_information_desc
+{
+    text-align: center;
+    position: relative;
+    top: -0.875rem;
+    margin-right: 5%;
+    color: #627972;
+    font-weight: 700;
+}
+@media(max-width:1050px)
+{
+    html
+    {
+        font-size: 15px;
+    }
+}
+@media(max-width:980px)
+{
+    html
+    {
+        font-size: 14px;
+    }
+}
+@media(max-width:765px)
+{
+    html
+    {
+        font-size: 13px;
+    }
+}
+@media(max-width:700px)
+{
+    html
+    {
+        font-size: 11px;
+    }
+}
+@media(max-width:615px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+}
+@media(max-width:535px)
+{
+    html
+    {
+        font-size: 9px;
+    }
+}
+@media(max-width:490px)
+{
+    html
+    {
+        font-size: 8px;
+    }
+    .search
+    {
+        margin-top: 60%;
+    }
+}
+@media(max-width:425px)
+{
+    html
+    {
+        font-size: 7px;
+    }
+    .search
+    {
+        margin-top: 60%;
+    }
+}
+@media(max-width:425px)
+{
+    html
+    {
+        font-size: 6.7px;
+    }
+    .search
+    {
+        margin-top: 60%;
+    }
+}
+@media(max-width:355px)
+{
+    html
+    {
+        font-size: 5.9px;
+    }
+    .search
+    {
+        margin-top: 100%;
+        margin-right: 20%;
+    }
+}
+
+
+
+
