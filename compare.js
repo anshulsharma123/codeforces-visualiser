@@ -117,13 +117,10 @@ function refresh()
 function compareSearch() {
   refresh();
   let str=document.getElementById("search-inputs").value.split(" ");
-  console.log(str.length);
   if(str.length==2)
   {
     handel1=str[0];
     handel2=str[1];
-    console.log(handel1);
-    console.log(handel2);
     link0 = "https://codeforces.com/api/user.rating?handle=";
     link =  "https://codeforces.com/api/user.rating?handle=";
     link1 = "https://codeforces.com/api/user.info?handles=";
@@ -316,7 +313,6 @@ async function statusApi() {
         : 1;
       handel2set2.add(data2.result[i].verdict);
     }
-    console.log(handel1lang);
     max_acc();
     max_sub();
     one_acc();
@@ -384,7 +380,6 @@ function tagscomparison() {
   function drawStuff() {
     let a = [];
           for (let p in handel1tag) {
-            console.log("hiii");
             if (handel2tag[p] == undefined) {
               a.push([p, handel1tag[p], 0]);
             } else {
@@ -462,7 +457,6 @@ function QuestionsRatingComparison() {
   function drawStuff() {
     let a = [];
     for (let p in handel1ratings) {
-      console.log("hiii");
       if (handel2ratings[p] == undefined) {
         a.push([p, handel1ratings[p], 0]);
       } else {

@@ -20,10 +20,8 @@ var set5 = new Set();
 function search() {
   refresh();
   handel = document.getElementById("search-inputs").value;
-  console.log(handel);
   if(handel!="")
   {
-    console.log(handel);
     link = "https://codeforces.com/api/user.rating?handle=";
     link1 = "https://codeforces.com/api/user.info?handles=";
     link2 = "https://codeforces.com/api/user.status?handle=";
@@ -158,7 +156,6 @@ function Api1() {
           document.getElementById("maxInformation").style.color="red";
           document.getElementById("max_information_desc").style.color="red";
         }
-        console.log(data.result[0].rank);
         document.getElementById("ratingInformation").innerHTML =
           data.result[0].rating;
         document.getElementById("rankInformation").innerHTML =
@@ -180,7 +177,6 @@ async function Api() {
   let data=await data1.json();
   if(data.status==="OK")
   {
-        console.log(data);
         for (var i = 0; i < data.result.length; i++) {
           if (data.result[i].verdict == "OK") {
             // console.log(data.result[i].problem.name);
@@ -211,7 +207,6 @@ async function Api() {
           verdicts[nums] = verdicts[nums] ? verdicts[nums] + 1 : 1;
           set2.add(data.result[i].verdict);
         }
-        console.log(seatings);
         languageUsed();
         dataPercentage();
         topicCovered();
@@ -225,7 +220,6 @@ async function Api() {
 async function Api2() {
   let data1 =await fetch(link);
   let data=await data1.json();
-  console.log(data);
   if(data.status==="OK")
   {
         document.getElementById("contestInformation").innerHTML =
@@ -631,7 +625,6 @@ function dataPercentage()
       Tle=verdicts["TIME_LIMIT_EXCEEDED"]==undefined?0:verdicts["TIME_LIMIT_EXCEEDED"]/sum;
       document.getElementById("acc").innerHTML=cum;
       document.getElementById("wrongAnswer").innerHTML=verdicts["WRONG_ANSWER"]==undefined?0:verdicts["WRONG_ANSWER"];
-      console.log(verdicts["TIME_LIMIT_EXCEEDED"]);
       document.getElementById("timeLimitError").innerHTML=verdicts["TIME_LIMIT_EXCEEDED"]==undefined?0:verdicts["TIME_LIMIT_EXCEEDED"];
       document.getElementById("compilationError").innerHTML=verdicts["COMPILATION_ERROR"]==undefined?0:verdicts["COMPILATION_ERROR"];
       Accept(accept);
